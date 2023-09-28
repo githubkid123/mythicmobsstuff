@@ -1,35 +1,11 @@
-# basic mob
-netherpig1:
-  Type: PIGLIN
+basicZombie:
+  Type: ZOMBIE
   AIGoalSelectors:
     - clear
-    - goToSpawn{speed=1;max=8;min=7}
+    - goToSpawn{speed=1;max=7;min=0}
     - meleeattack
-  Display: '&c&lNether Pig'
   Health: 5
   Damage: 3
-  Equipment:
-  - GOLDEN_CHESTPLATE{enchants=THORNS:1,} CHEST
-  Options:
-    AlwaysShowName: false
-    MovementSpeed: 0.3
-    MaxCombatDistance: 25
-    PreventOtherDrops: true   
-  Drops:
-  - Piglindrops
-STRIDERGUARD:
-  Type: STRIDER
-  AIGoalSelectors:
-   - clear
-   - meleeattack
-   - randomstroll
-   - goToSpawn{speed=1;max=8;min=7}
-  AITargetSelectors:
-   - clear
-   - attacker
-  Display: '&c&lSTRIDER GUARD'
-  Health: 8
-  Damage: 6
   Options:
     AlwaysShowName: false
     MovementSpeed: 0.25
